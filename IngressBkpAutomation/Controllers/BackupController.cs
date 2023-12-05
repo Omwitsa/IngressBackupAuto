@@ -5,7 +5,6 @@ using IngressBkpAutomation.Utilities;
 using IngressBkpAutomation.ViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using MySql.Data.MySqlClient;
 using System.IO.Compression;
 
@@ -127,17 +126,21 @@ namespace IngressBkpAutomation.Controllers
                 if (zipResp.Success)
                 {
                     var emailResp = await SendEmail();
-                    zipResp.Message = emailResp.Message;
+                    if(!emailResp.Success)
+                    {
+                        _notyf.Error(emailResp.Message);
+                        return RedirectToAction("Index");
+                    }
                 }
 
-                zipResp.Message = zipResp.Success ? "Backup send successfully" : zipResp.Message;
-                _notyf.Success(zipResp.Message);
+                _notyf.Success("Backup send successfully");
+                return RedirectToAction("Index");
             }
             catch (Exception ex)
             {
                 _notyf.Error("Sorry, An error occurred");
+                return RedirectToAction("Index");
             }
-            return RedirectToAction("Index");
         }
 
         private async Task<ReturnData<bool>> SendEmail()

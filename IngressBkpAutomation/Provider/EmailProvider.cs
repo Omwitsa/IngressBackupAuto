@@ -1,4 +1,6 @@
-﻿using IngressBkpAutomation.IProvider;
+﻿using IngressBkpAutomation.Constants;
+using IngressBkpAutomation.IProvider;
+using IngressBkpAutomation.Utilities;
 using IngressBkpAutomation.ViewModel;
 using MailKit.Net.Smtp;
 using MailKit.Security;
@@ -29,17 +31,17 @@ namespace IngressBkpAutomation.Provider
             builder.HtmlBody = emailMessage.Body;
             email.Body = builder.ToMessageBody();
 
-            //var options = SecureSocketOptions.StartTls;
-            //if (_mailSettings.SocketOption.ToLower().Equals("sslonconnect"))
-            //    options = SecureSocketOptions.SslOnConnect;
-            //if (_mailSettings.SocketOption.ToLower().Equals("none"))
-            //    options = SecureSocketOptions.None;
+            var options = SecureSocketOptions.StartTls;
+            if (smtpSettings.SocketOption.ToUpper().Equals(StrValues.SSL))
+                options = SecureSocketOptions.SslOnConnect;
+            if (smtpSettings.SocketOption.ToLower().Equals(StrValues.NONE))
+                options = SecureSocketOptions.None;
 
             try
             {
                 using var smtp = new SmtpClient();
-                smtp.Connect(smtpSettings.Server, smtpSettings.Port, SecureSocketOptions.StartTls);
-                smtp.Authenticate(smtpSettings.EmailId, smtpSettings.Password);
+                smtp.Connect(smtpSettings.Server, smtpSettings.Port, options);
+                smtp.Authenticate(smtpSettings.EmailId, Decryptor.Decrypt(smtpSettings.Password));
                 await smtp.SendAsync(email);
                 smtp.Disconnect(true);
                 return new ReturnData<bool>

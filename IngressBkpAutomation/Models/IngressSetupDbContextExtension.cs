@@ -34,7 +34,7 @@ namespace IngressBkpAutomation.Models
                     SmtpPort = 587, // 587, 465
                     SocketOption = "TLS", // sslonconnect, none
                     MysqlUserName = "root",
-                    MysqlPassword = Decryptor.Encrypt("Aaa@2023"),
+                    MysqlPassword = Decryptor.Encrypt("Ingress2023"),
                     MysqlServer = "localhost",
                     SiteIngressDb = "ingress",
                     HoIngressDb = "ingress_simba",

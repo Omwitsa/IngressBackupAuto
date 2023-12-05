@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.IdentityModel.Tokens;
 
 namespace IngressBkpAutomation.Controllers
 {
@@ -145,6 +146,7 @@ namespace IngressBkpAutomation.Controllers
         {
             try
             {
+                ViewBag.roles = new SelectList(ArrValues.Roles);
                 user.Role = user?.Role ?? StrValues.UserRole;
                 var userInput = new List<Tuple<string, string, InputDataType>>
                 {
@@ -182,6 +184,62 @@ namespace IngressBkpAutomation.Controllers
             {
                 _notyf.Error("Sorry, An error occurred");
                 return View(user);
+            }
+        }
+
+        [Authorize(Roles = "Admin")]
+        public IActionResult SysSetup()
+        {
+            ViewBag.options = new SelectList(ArrValues.SocketOptions);
+            var setup = _context.SysSetup.FirstOrDefault();
+            return View(setup);
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public IActionResult SysSetup([Bind("OrgName,SiteName,SmtpUserName,SmtpPassword,SmtpServer,SmtpPort,SocketOption,MysqlUserName,MysqlPassword,MysqlServer,SiteIngressDb,HoIngressDb,IngressBackMonths,Contact,Closed")] SysSetup setup)
+        {
+            try
+            {
+                ViewBag.options = new SelectList(ArrValues.SocketOptions);
+                var userInput = new List<Tuple<string, string, InputDataType>>
+                {
+                    Tuple.Create("Org Name", setup.OrgName, InputDataType.Default),
+                    Tuple.Create("Site Name", setup.SiteName, InputDataType.Default),
+                };
+
+                var validUserInputs = _validateService.Validate(userInput);
+                if (!validUserInputs.Success)
+                {
+                    _notyf.Error(validUserInputs.Message);
+                    return View(setup);
+                }
+
+                var savedSetup = _context.SysSetup.FirstOrDefault();
+                savedSetup.OrgName = setup.OrgName;
+                savedSetup.SiteName = setup.SiteName;
+                savedSetup.SmtpUserName = setup.SmtpUserName;
+                savedSetup.SmtpPassword = string.IsNullOrEmpty(setup.SmtpPassword) ? savedSetup.SmtpPassword : Decryptor.Encrypt(setup.SmtpPassword);
+                savedSetup.SmtpServer = setup.SmtpServer;
+                savedSetup.SmtpPort = setup.SmtpPort;
+                savedSetup.SocketOption = setup.SocketOption;
+                savedSetup.MysqlUserName = setup.MysqlUserName;
+                savedSetup.MysqlPassword = string.IsNullOrEmpty(setup.MysqlPassword) ? savedSetup.MysqlPassword : Decryptor.Encrypt(setup.MysqlPassword);
+                savedSetup.MysqlServer = setup.MysqlServer;
+                savedSetup.SiteIngressDb = setup.SiteIngressDb;
+                savedSetup.HoIngressDb = setup.HoIngressDb;
+                savedSetup.IngressBackMonths = setup.IngressBackMonths;
+                savedSetup.Contact = setup.Contact;
+                savedSetup.Closed = setup.Closed;
+
+                _context.SaveChanges();
+                _notyf.Success("Settings updated successfully");
+                return View(setup);
+            }
+            catch (Exception)
+            {
+                _notyf.Error("Sorry, An error occurred");
+                return View(setup);
             }
         }
     }
