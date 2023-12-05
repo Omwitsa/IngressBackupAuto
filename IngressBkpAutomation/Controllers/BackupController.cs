@@ -192,7 +192,7 @@ namespace IngressBkpAutomation.Controllers
             try
             {
                 string sourcePath = Path.Combine(_env.WebRootPath, "MySQL", "Backup");
-                var backupName = $"backup.sql{DateTime.Today}.zip";
+                var backupName = $"backup.sql {DateTime.Today.Year}-{DateTime.Today.Month}-{DateTime.Today.Day}.zip";
                 string destinationPath = Path.Combine(_env.WebRootPath, "MySQL", backupName);
                 if (!Directory.Exists(sourcePath))
                     Directory.CreateDirectory(sourcePath);

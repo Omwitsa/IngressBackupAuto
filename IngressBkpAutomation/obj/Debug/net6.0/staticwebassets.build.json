@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jI4OjCeOZN7si745oUzgifbGgAe/JsI1cSTho2yy50s=",
+  "Hash": "IW1LIQUgI4dgCEdEwvmGbFJ7rj4xA7KFW1uf+9uQRTw=",
   "Source": "IngressBkpAutomation",
   "BasePath": "_content/IngressBkpAutomation",
   "Mode": "Default",
@@ -4758,6 +4758,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\MySQL\\Backup\\backup.sql",
+      "SourceId": "IngressBkpAutomation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\",
+      "BasePath": "_content/IngressBkpAutomation",
+      "RelativePath": "MySQL/Backup/backup.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\MySQL\\Backup\\backup.sql"
     },
     {
       "Identity": "C:\\Users\\aa9us\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\staticwebassets\\notyf.min.css",

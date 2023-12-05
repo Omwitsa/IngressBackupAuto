@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\IngressBkpAutomation.bundle.scp.css"
     },
     {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\MySQL\\Backup\\backup.sql",
+      "PackagePath": "staticwebassets\\MySQL\\Backup\\backup.sql"
+    },
+    {
       "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\bg-title-01.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\bg-title-01.jpg"
     },
