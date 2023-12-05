@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace IngressBkpAutomation.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class InyialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -31,6 +31,7 @@ namespace IngressBkpAutomation.Migrations
                     HoIngressDb = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IngressBackMonths = table.Column<int>(type: "int", nullable: false),
                     Contact = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastBackup = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Closed = table.Column<bool>(type: "bit", nullable: false),
                     Personnel = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DateCreated = table.Column<DateTime>(type: "datetime2", nullable: true)

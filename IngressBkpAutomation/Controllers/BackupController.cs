@@ -50,6 +50,13 @@ namespace IngressBkpAutomation.Controllers
                     return RedirectToAction("Index");
                 }
 
+                var zipResp = await ZipBackup();
+                if (!zipResp.Success)
+                {
+                    _notyf.Error(zipResp.Message);
+                    return RedirectToAction("Index");
+                }
+
                 _notyf.Success("Ingress Backed up successfully");
                 return RedirectToAction("Index");
             }
@@ -122,15 +129,11 @@ namespace IngressBkpAutomation.Controllers
         {
             try
             {
-                var zipResp = await ZipBackup();
-                if (zipResp.Success)
+                var emailResp = await SendEmail();
+                if (!emailResp.Success)
                 {
-                    var emailResp = await SendEmail();
-                    if(!emailResp.Success)
-                    {
-                        _notyf.Error(emailResp.Message);
-                        return RedirectToAction("Index");
-                    }
+                    _notyf.Error(emailResp.Message);
+                    return RedirectToAction("Index");
                 }
 
                 _notyf.Success("Backup send successfully");
@@ -170,7 +173,7 @@ namespace IngressBkpAutomation.Controllers
                 Body = GenerateMailBody(institutionEmail),
             };
 
-            var filePath = Path.Combine(_env.WebRootPath, "MySQL", "backup.sql.zip");
+            var filePath = Path.Combine(_env.WebRootPath, "MySQL", setting.LastBackup);
             emailMessage.Attachments.Add(filePath);
             var smtpSettings = new MailSettings
             {
@@ -189,7 +192,8 @@ namespace IngressBkpAutomation.Controllers
             try
             {
                 string sourcePath = Path.Combine(_env.WebRootPath, "MySQL", "Backup");
-                string destinationPath = Path.Combine(_env.WebRootPath, "MySQL", "backup.sql.zip");
+                var backupName = $"backup.sql{DateTime.Today}.zip";
+                string destinationPath = Path.Combine(_env.WebRootPath, "MySQL", backupName);
                 if (!Directory.Exists(sourcePath))
                     Directory.CreateDirectory(sourcePath);
 
@@ -201,6 +205,10 @@ namespace IngressBkpAutomation.Controllers
                     sourcePath,
                     destinationPath
                 );
+
+                var setup = _context.SysSetup.FirstOrDefault();
+                setup.LastBackup = backupName;
+                _context.SaveChanges();
                 return new ReturnData<string>
                 {
                     Success = true,

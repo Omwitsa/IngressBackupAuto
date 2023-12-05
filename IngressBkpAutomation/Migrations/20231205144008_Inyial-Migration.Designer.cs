@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IngressBkpAutomation.Migrations
 {
     [DbContext(typeof(IngressSetupDbContext))]
-    [Migration("20231205082505_Initial-Migration")]
-    partial class InitialMigration
+    [Migration("20231205144008_Inyial-Migration")]
+    partial class InyialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,6 +47,9 @@ namespace IngressBkpAutomation.Migrations
 
                     b.Property<int>("IngressBackMonths")
                         .HasColumnType("int");
+
+                    b.Property<string>("LastBackup")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MysqlPassword")
                         .HasColumnType("nvarchar(max)");

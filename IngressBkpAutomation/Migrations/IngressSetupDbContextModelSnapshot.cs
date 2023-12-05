@@ -45,6 +45,9 @@ namespace IngressBkpAutomation.Migrations
                     b.Property<int>("IngressBackMonths")
                         .HasColumnType("int");
 
+                    b.Property<string>("LastBackup")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("MysqlPassword")
                         .HasColumnType("nvarchar(max)");
 

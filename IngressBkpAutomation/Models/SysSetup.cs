@@ -17,6 +17,7 @@
         public string? HoIngressDb { get; set; }
         public int IngressBackMonths { get; set; }
         public string? Contact { get; set; }
+        public string? LastBackup { get; set; }
         public bool Closed { get; set; }
         public string? Personnel { get; set; }
         public DateTime? DateCreated { get; set; }
