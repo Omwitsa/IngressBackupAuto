@@ -1,0 +1,81 @@
+﻿@model IngressBkpAutomation.Models.User
+
+<div class="container-fluid">
+    <form asp-action="NewUser">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="card">
+            <div class="card-header">
+                <strong>User</strong>
+            </div>
+           
+            <div class="card-body card-block">
+                <div class="row">
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                        <label class="form-control-label">User ID <span class="required">*</span></label>
+                        <input asp-for="UserID" type="text" class="form-control" required>
+                        <span asp-validation-for="UserID" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                        <label asp-for="Names" class="form-control-label"></label>
+                        <input asp-for="Names" type="text" class="form-control">
+                        <span asp-validation-for="Names" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                        <label class="form-control-label"> Password <span class="required">*</span></label>
+                        <input asp-for="Password" type="password" class="form-control" required>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                        <label class="form-control-label">Confirm Password <span class="required">*</span></label>
+                        <input asp-for="ConfirmPassword" type="password" class="form-control" required>
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                        <label class="form-control-label">Role <span class="required">*</span></label>
+                        <select asp-for="Role" class="form-control" asp-items="@ViewBag.roles" required></select>
+                        <span asp-validation-for="Role" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                        <label asp-for="Email" class="form-control-label"></label>
+                        <input asp-for="Email" type="email" class="form-control">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                        <label asp-for="Phone" class="form-control-label"></label>
+                        <input asp-for="Phone" type="text" class="form-control">
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="checkbox">
+                        <div class="col-sm-12">
+                            <input type="checkbox" id="status" asp-for="Status" checked>
+                            <label asp-for="Status" class="m-b-10"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary btn-sm waves-effect waves-light">
+                    <i class="fa fa-dot-circle-o"></i> Save
+                </button>
+                <a asp-action="ListUsers" class="btn btn-secondary btn-sm waves-effect">
+                    <i class="fa fa-ban"></i> Back
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script type="text/javascript">
+        $(function () {
+           
+        });
+    </script>
+}

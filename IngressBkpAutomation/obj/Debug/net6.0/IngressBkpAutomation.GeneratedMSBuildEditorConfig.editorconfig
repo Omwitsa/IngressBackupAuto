@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = IngressBkpAutomation
+build_property.RootNamespace = IngressBkpAutomation
+build_property.ProjectDir = C:\SourceCode\C#\IngressBkpAutomation\IngressBkpAutomation\IngressBkpAutomation\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\SourceCode\C#\IngressBkpAutomation\IngressBkpAutomation\IngressBkpAutomation
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/Backup/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFja3VwXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/Home/Denied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/Home/ListUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0VXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/Home/NewUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/PartialView/_DesktopHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdcX0Rlc2t0b3BIZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/PartialView/_MobileHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdcX01vYmlsZUhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SourceCode/C\#/IngressBkpAutomation/IngressBkpAutomation/IngressBkpAutomation/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-w4lo3fug2e
