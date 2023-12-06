@@ -1,0 +1,1133 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\IngressBkpAutomation.bundle.scp.css",
+      "PackagePath": "staticwebassets\\IngressBkpAutomation.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\bg-title-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg-title-01.jpg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\bg-title-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg-title-02.jpg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\icon\\Untitled-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\Untitled-1.jpg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\icon\\avatar-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\avatar-01.jpg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\icon\\avatar-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\avatar-02.jpg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\icon\\avatar-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\avatar-03.jpg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\icon\\avatar-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\avatar-04.jpg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\icon\\avatar-05.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\avatar-05.jpg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\icon\\avatar-06.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\avatar-06.jpg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\icon\\avatar-big-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\avatar-big-01.jpg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\icon\\logo-blue.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\logo-blue.png"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\icon\\logo-mini.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\logo-mini.png"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\icon\\logo-white.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\logo-white.png"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\icon\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\logo.png"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\css\\bootstrap-datetimepicker.min.css",
+      "PackagePath": "staticwebassets\\files\\css\\bootstrap-datetimepicker.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\css\\font-face.css",
+      "PackagePath": "staticwebassets\\files\\css\\font-face.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\css\\theme.css",
+      "PackagePath": "staticwebassets\\files\\css\\theme.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\js\\bootstrap-datetimepicker.js",
+      "PackagePath": "staticwebassets\\files\\js\\bootstrap-datetimepicker.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\js\\main.js",
+      "PackagePath": "staticwebassets\\files\\js\\main.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\js\\moment.js",
+      "PackagePath": "staticwebassets\\files\\js\\moment.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\animsition\\animsition.min.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\animsition\\animsition.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\animsition\\animsition.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\animsition\\animsition.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\bootstrap-4.1\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\bootstrap-4.1\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\bootstrap-4.1\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\bootstrap-4.1\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\bootstrap-4.1\\popper.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\bootstrap-4.1\\popper.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\bootstrap-progressbar\\bootstrap-progressbar-3.3.4.min.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\bootstrap-progressbar\\bootstrap-progressbar-3.3.4.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\bootstrap-progressbar\\bootstrap-progressbar.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\bootstrap-progressbar\\bootstrap-progressbar.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\chartjs\\Chart.bundle.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\chartjs\\Chart.bundle.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\circle-progress\\circle-progress.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\circle-progress\\circle-progress.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\circle-progress\\circle-progress.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\circle-progress\\circle-progress.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\countdown\\countdowntime.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\countdown\\countdowntime.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\countdown\\jquery.countdown.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\countdown\\jquery.countdown.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\countdown\\moment-timezone-with-data.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\countdown\\moment-timezone-with-data.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\countdown\\moment-timezone.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\countdown\\moment-timezone.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\countdown\\moment.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\countdown\\moment.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\counter-up\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\counter-up\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\counter-up\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\counter-up\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\counter-up\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\counter-up\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\css-hamburgers\\hamburgers.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\css-hamburgers\\hamburgers.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\css-hamburgers\\hamburgers.min.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\css-hamburgers\\hamburgers.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-4.7\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-4.7\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-4.7\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-4.7\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-4.7\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-4.7\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-4.7\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-4.7\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-4.7\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-4.7\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-4.7\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-4.7\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-4.7\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-4.7\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-4.7\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-4.7\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-4.7\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-4.7\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\css\\fontawesome-all.min.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\css\\fontawesome-all.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\font-awesome-5\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\files\\vendor\\font-awesome-5\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\CHANGELOG.txt",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\CHANGELOG.txt"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\CONTRIBUTING.txt",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\CONTRIBUTING.txt"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\README.txt",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\README.txt"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\fullcalendar.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\fullcalendar.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\fullcalendar.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\fullcalendar.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\fullcalendar.min.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\fullcalendar.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\fullcalendar.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\fullcalendar.print.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\fullcalendar.print.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\fullcalendar.print.min.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\fullcalendar.print.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\gcal.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\gcal.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\gcal.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\gcal.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\lib\\moment.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\lib\\moment.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale-all.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale-all.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\af.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\af.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar-dz.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar-dz.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar-kw.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar-kw.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar-ly.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar-ly.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar-ma.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar-ma.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar-sa.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar-sa.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar-tn.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar-tn.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ar.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\be.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\be.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\bg.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\bg.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\bs.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\bs.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ca.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ca.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\cs.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\cs.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\da.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\da.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\de-at.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\de-at.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\de-ch.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\de-ch.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\de.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\de.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\el.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\el.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\en-au.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\en-au.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\en-ca.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\en-ca.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\en-gb.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\en-gb.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\en-ie.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\en-ie.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\en-nz.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\en-nz.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\es-do.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\es-do.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\es-us.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\es-us.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\es.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\es.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\et.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\et.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\eu.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\eu.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\fa.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\fa.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\fi.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\fi.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\fr-ca.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\fr-ca.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\fr-ch.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\fr-ch.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\fr.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\fr.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\gl.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\gl.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\he.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\he.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\hi.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\hi.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\hr.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\hr.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\hu.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\hu.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\id.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\id.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\is.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\is.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\it.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\it.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ja.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ja.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ka.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ka.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\kk.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\kk.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ko.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ko.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\lb.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\lb.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\lt.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\lt.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\lv.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\lv.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\mk.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\mk.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ms-my.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ms-my.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ms.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ms.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\nb.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\nb.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\nl-be.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\nl-be.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\nl.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\nl.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\nn.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\nn.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\pl.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\pl.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\pt-br.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\pt-br.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\pt.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\pt.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ro.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ro.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\ru.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\ru.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\sk.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\sk.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\sl.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\sl.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\sq.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\sq.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\sr-cyrl.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\sr-cyrl.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\sr.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\sr.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\sv.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\sv.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\th.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\th.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\tr.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\tr.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\uk.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\uk.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\vi.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\vi.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\zh-cn.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\zh-cn.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\zh-hk.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\zh-hk.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\fullcalendar-3.10.0\\locale\\zh-tw.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\fullcalendar-3.10.0\\locale\\zh-tw.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\dist\\css\\lightbox.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\dist\\css\\lightbox.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\dist\\images\\close.png",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\dist\\images\\close.png"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\dist\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\dist\\images\\loading.gif"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\dist\\images\\next.png",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\dist\\images\\next.png"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\dist\\images\\prev.png",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\dist\\images\\prev.png"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\dist\\js\\lightbox-plus-jquery.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\dist\\js\\lightbox-plus-jquery.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\dist\\js\\lightbox-plus-jquery.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\dist\\js\\lightbox-plus-jquery.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\dist\\js\\lightbox-plus-jquery.min.map",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\dist\\js\\lightbox-plus-jquery.min.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\dist\\js\\lightbox.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\dist\\js\\lightbox.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\dist\\js\\lightbox.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\dist\\js\\lightbox.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\dist\\js\\lightbox.min.map",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\dist\\js\\lightbox.min.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\src\\css\\lightbox.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\src\\css\\lightbox.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\src\\images\\close.png",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\src\\images\\close.png"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\src\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\src\\images\\loading.gif"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\src\\images\\next.png",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\src\\images\\next.png"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\src\\images\\prev.png",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\src\\images\\prev.png"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\lightbox2\\src\\js\\lightbox.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\lightbox2\\src\\js\\lightbox.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\mdi-font\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\mdi-font\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\mdi-font\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\mdi-font\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\mdi-font\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\files\\vendor\\mdi-font\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\mdi-font\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\files\\vendor\\mdi-font\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\mdi-font\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\files\\vendor\\mdi-font\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\mdi-font\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\files\\vendor\\mdi-font\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\mdi-font\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\files\\vendor\\mdi-font\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\perfect-scrollbar\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\perfect-scrollbar\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\progressbar\\progressbar.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\progressbar\\progressbar.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\progressbar\\progressbar.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\progressbar\\progressbar.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\select2\\select2.min.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\select2\\select2.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\select2\\select2.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\select2\\select2.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\config.rb",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\config.rb"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\fonts\\slick.svg"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\slick-theme.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\slick-theme.less",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\slick-theme.less"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\slick-theme.scss",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\slick-theme.scss"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\slick.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\slick.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\slick.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\slick.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\slick.less",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\slick.less"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\slick.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\slick.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\slick\\slick.scss",
+      "PackagePath": "staticwebassets\\files\\vendor\\slick\\slick.scss"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\smk-accordion\\accordion.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\smk-accordion\\accordion.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\smk-accordion\\accordion.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\smk-accordion\\accordion.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\smk-accordion\\accordion.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\smk-accordion\\accordion.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\sweetalert\\sweetalert.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\sweetalert\\sweetalert.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\vector-map\\jquery.vmap.brazil.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\vector-map\\jquery.vmap.brazil.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\vector-map\\jquery.vmap.europe.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\vector-map\\jquery.vmap.europe.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\vector-map\\jquery.vmap.france.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\vector-map\\jquery.vmap.france.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\vector-map\\jquery.vmap.germany.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\vector-map\\jquery.vmap.germany.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\vector-map\\jquery.vmap.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\vector-map\\jquery.vmap.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\vector-map\\jquery.vmap.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\vector-map\\jquery.vmap.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\vector-map\\jquery.vmap.russia.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\vector-map\\jquery.vmap.russia.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\vector-map\\jquery.vmap.sampledata.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\vector-map\\jquery.vmap.sampledata.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\vector-map\\jquery.vmap.usa.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\vector-map\\jquery.vmap.usa.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\vector-map\\jquery.vmap.world.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\vector-map\\jquery.vmap.world.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\vector-map\\jqvmap.min.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\vector-map\\jqvmap.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\wow\\animate.css",
+      "PackagePath": "staticwebassets\\files\\vendor\\wow\\animate.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\files\\vendor\\wow\\wow.min.js",
+      "PackagePath": "staticwebassets\\files\\vendor\\wow\\wow.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.IngressBkpAutomation.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.IngressBkpAutomation.props",
+      "PackagePath": "build\\IngressBkpAutomation.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.IngressBkpAutomation.props",
+      "PackagePath": "buildMultiTargeting\\IngressBkpAutomation.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.IngressBkpAutomation.props",
+      "PackagePath": "buildTransitive\\IngressBkpAutomation.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

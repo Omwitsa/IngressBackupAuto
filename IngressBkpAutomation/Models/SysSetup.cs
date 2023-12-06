@@ -18,6 +18,7 @@
         public int IngressBackMonths { get; set; }
         public string? Contact { get; set; }
         public string? LastBackup { get; set; }
+        public string? BackupLoc { get; set; }
         public bool Closed { get; set; }
         public string? Personnel { get; set; }
         public DateTime? DateCreated { get; set; }

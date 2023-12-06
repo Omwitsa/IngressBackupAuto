@@ -82,6 +82,7 @@ namespace IngressBkpAutomation.Controllers
             var claims = new List<Claim>();
             claims.Add(new Claim(ClaimTypes.Name, dbUser.Names));
             claims.Add(new Claim(ClaimTypes.Role, dbUser.Role));
+            claims.Add(new Claim(ClaimTypes.Email, dbUser.Email));
             claims.Add(new Claim(StrValues.UserId, dbUser.UserID));
 
             // Create Identity
@@ -153,13 +154,14 @@ namespace IngressBkpAutomation.Controllers
                     Tuple.Create("User ID", user.UserID, InputDataType.Default),
                     Tuple.Create("Password", user.Password, InputDataType.Password),
                     Tuple.Create("Confirm Password", user.ConfirmPassword, InputDataType.Password),
+                    Tuple.Create("Email", user.Email, InputDataType.Email),
                 };
 
                 var validUserInputs = _validateService.Validate(userInput);
                 if (!validUserInputs.Success)
                 {
                     _notyf.Error(validUserInputs.Message);
-                    return View();
+                    return View(user);
                 }
 
                 if (!user.Password.Equals(user.ConfirmPassword))
@@ -188,6 +190,74 @@ namespace IngressBkpAutomation.Controllers
         }
 
         [Authorize(Roles = "Admin")]
+        public IActionResult EditUser(int? id)
+        {
+            ViewBag.roles = new SelectList(ArrValues.Roles);
+            var user = _context.Users.FirstOrDefault(u => u.Id == id);
+            return View(user);
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public IActionResult EditUser([Bind("Id,UserID,Names,Password,ConfirmPassword,Email,Phone,Status,Role")] User user)
+        {
+            try
+            {
+                ViewBag.roles = new SelectList(ArrValues.Roles);
+                user.Role = user?.Role ?? StrValues.UserRole;
+                user.UserID = user?.UserID ?? "";
+                user.Password = user?.Password ?? "";
+                user.ConfirmPassword = user?.ConfirmPassword ?? "";
+                var userInput = new List<Tuple<string, string, InputDataType>>
+                {
+                    Tuple.Create("User ID", user.UserID, InputDataType.Default),
+                    Tuple.Create("Email", user.Email, InputDataType.Email),
+                };
+
+                var validUserInputs = _validateService.Validate(userInput);
+                if (!validUserInputs.Success)
+                {
+                    _notyf.Error(validUserInputs.Message);
+                    return View(user);
+                }
+
+                if (!user.Password.Equals(user.ConfirmPassword))
+                {
+                    _notyf.Error("Sorry, Password and Confirm password do not match");
+                    return View(user);
+                }
+
+                if (_context.Users.Any(s => s.UserID.ToUpper().Equals(user.UserID.ToUpper()) && s.Id != user.Id))
+                {
+                    _notyf.Error("Sorry, User already exist");
+                    return View(user);
+                }
+
+                var savedUser = _context.Users.FirstOrDefault(u => u.UserID.ToUpper().Equals(user.UserID.ToUpper()));
+                if (savedUser == null)
+                {
+                    _notyf.Error("Sorry, User not found");
+                    return View(user);
+                }
+                savedUser.Names = user.Names;
+                savedUser.Email = user.Email;
+                savedUser.Phone = user.Phone;
+                savedUser.Status = user.Status;
+                savedUser.Role = user.Role;
+                savedUser.Password = string.IsNullOrEmpty(user.Password) ? savedUser.Password : Decryptor.Encrypt(user.Password);
+                
+                _context.SaveChanges();
+                _notyf.Success("User updated successfully");
+                return RedirectToAction("ListUsers");
+            }
+            catch (Exception)
+            {
+                _notyf.Error("Sorry, An error occurred");
+                return View(user);
+            }
+        }
+
+        [Authorize(Roles = "Admin")]
         public IActionResult SysSetup()
         {
             ViewBag.options = new SelectList(ArrValues.SocketOptions);
@@ -197,7 +267,7 @@ namespace IngressBkpAutomation.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpPost]
-        public IActionResult SysSetup([Bind("OrgName,SiteName,SmtpUserName,SmtpPassword,SmtpServer,SmtpPort,SocketOption,MysqlUserName,MysqlPassword,MysqlServer,SiteIngressDb,HoIngressDb,IngressBackMonths,Contact,Closed")] SysSetup setup)
+        public IActionResult SysSetup([Bind("OrgName,SiteName,SmtpUserName,SmtpPassword,SmtpServer,SmtpPort,SocketOption,MysqlUserName,MysqlPassword,MysqlServer,SiteIngressDb,HoIngressDb,IngressBackMonths,BackupLoc,Contact,Closed")] SysSetup setup)
         {
             try
             {
@@ -229,6 +299,7 @@ namespace IngressBkpAutomation.Controllers
                 savedSetup.SiteIngressDb = setup.SiteIngressDb;
                 savedSetup.HoIngressDb = setup.HoIngressDb;
                 savedSetup.IngressBackMonths = setup.IngressBackMonths;
+                savedSetup.BackupLoc = setup.BackupLoc;
                 savedSetup.Contact = setup.Contact;
                 savedSetup.Closed = setup.Closed;
 

@@ -30,6 +30,9 @@ namespace IngressBkpAutomation.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("BackupLoc")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("Closed")
                         .HasColumnType("bit");
 

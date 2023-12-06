@@ -1,4 +1,5 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using IngressBkpAutomation.Constants;
 using IngressBkpAutomation.IProvider;
 using IngressBkpAutomation.Models;
 using IngressBkpAutomation.Utilities;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using System.IO.Compression;
+using System.Security.Claims;
 
 namespace IngressBkpAutomation.Controllers
 {
@@ -36,14 +38,14 @@ namespace IngressBkpAutomation.Controllers
             try
             {
                 // Remove duplicates
-
-                string folderName = @"MySQL\Backup";
-                string newPath = Path.Combine(_env.WebRootPath, folderName);
+                var setup = _context.SysSetup.FirstOrDefault();
+                setup.BackupLoc = string.IsNullOrEmpty(setup.BackupLoc) ? Path.Combine(_env.WebRootPath, "MysqlBackup") : setup.BackupLoc;
+                string newPath = Path.Combine(setup.BackupLoc, "Backup");
                 if (!Directory.Exists(newPath))
                     Directory.CreateDirectory(newPath);
                 string filePath = Path.Combine(newPath, "backup.sql");
 
-                var backupResp = await BackupIngress(filePath);
+                var backupResp = await BackupIngress(filePath, setup);
                 if (!backupResp.Success)
                 {
                     _notyf.Error(backupResp.Message);
@@ -67,11 +69,10 @@ namespace IngressBkpAutomation.Controllers
             }
         }
 
-        private async Task<ReturnData<string>> BackupIngress(string filePath)
+        private async Task<ReturnData<string>> BackupIngress(string filePath, SysSetup setup)
         {
             try
             {
-                var setup = _context.SysSetup.FirstOrDefault();
                 string constring = $"server={setup.MysqlServer};user={setup.MysqlUserName};pwd={Decryptor.Decrypt(setup.MysqlPassword)};database={setup.SiteIngressDb};";
                 var month = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
                 var backupMonthStartDate = month.AddMonths(-setup.IngressBackMonths);
@@ -149,6 +150,7 @@ namespace IngressBkpAutomation.Controllers
         private async Task<ReturnData<bool>> SendEmail()
         {
             var setting = _context.SysSetup.FirstOrDefault();
+            setting.BackupLoc = string.IsNullOrEmpty(setting.BackupLoc) ? Path.Combine(_env.WebRootPath, "MysqlBackup") : setting.BackupLoc;
             //var varificationLink = $"{Request.Host}/account/confirmEmail?username={userDetails.Data.UserId}";
             //var logoImageUrl = Path.Combine(_env.WebRootPath, setting.LogoImageUrl);
             var institutionEmail = new EmailAddress
@@ -157,23 +159,30 @@ namespace IngressBkpAutomation.Controllers
                 Address = setting.SmtpUserName
             };
 
-            var receiverEmail = new EmailAddress
+            var receiver1Email = new EmailAddress
             {
                 Name = "Ingress Backup",
-                Address = "wilson.omwitsa@aaagrowers.co.ke"
+                Address = setting.SmtpUserName
+            };
+
+            var userEmail = HttpContext.User.FindFirst(ClaimTypes.Email)?.Value;
+            var receiver2Email = new EmailAddress
+            {
+                Name = "Ingress Backup",
+                Address = userEmail
             };
 
             var emailMessage = new EmailMessage
             {
                 FromAddresses = new List<EmailAddress> { institutionEmail },
-                ToAddresses = new List<EmailAddress> { receiverEmail },
+                ToAddresses = new List<EmailAddress> { receiver1Email, receiver2Email },
                 Subject = $"{setting.SiteName} Ingress Backup",
                 //InstitutionLogo = logoImageUrl,
                 Attachments = new List<string>(),
                 Body = GenerateMailBody(institutionEmail),
             };
 
-            var filePath = Path.Combine(_env.WebRootPath, "MySQL", setting.LastBackup);
+            var filePath = Path.Combine(setting.BackupLoc, setting.LastBackup);
             emailMessage.Attachments.Add(filePath);
             var smtpSettings = new MailSettings
             {
@@ -191,9 +200,11 @@ namespace IngressBkpAutomation.Controllers
         {
             try
             {
-                string sourcePath = Path.Combine(_env.WebRootPath, "MySQL", "Backup");
+                var setup = _context.SysSetup.FirstOrDefault();
+                setup.BackupLoc = string.IsNullOrEmpty(setup.BackupLoc) ? Path.Combine(_env.WebRootPath, "MysqlBackup") : setup.BackupLoc;
+                string sourcePath = Path.Combine(setup.BackupLoc, "Backup");
                 var backupName = $"backup.sql {DateTime.Today.Year}-{DateTime.Today.Month}-{DateTime.Today.Day}.zip";
-                string destinationPath = Path.Combine(_env.WebRootPath, "MySQL", backupName);
+                string destinationPath = Path.Combine(setup.BackupLoc, backupName);
                 if (!Directory.Exists(sourcePath))
                     Directory.CreateDirectory(sourcePath);
 
@@ -206,7 +217,6 @@ namespace IngressBkpAutomation.Controllers
                     destinationPath
                 );
 
-                var setup = _context.SysSetup.FirstOrDefault();
                 setup.LastBackup = backupName;
                 _context.SaveChanges();
                 return new ReturnData<string>
