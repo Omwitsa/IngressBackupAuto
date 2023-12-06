@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JpDdTwNwhCHFKxuLe1cs/O8GM66fdILH25eFaJ/Gn2U=",
+  "Hash": "jI4OjCeOZN7si745oUzgifbGgAe/JsI1cSTho2yy50s=",
   "Source": "IngressBkpAutomation",
   "BasePath": "_content/IngressBkpAutomation",
   "Mode": "Default",
@@ -4758,40 +4758,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
-    },
-    {
-      "Identity": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\MysqlBackup\\backup.sql 2023-12-6.zip",
-      "SourceId": "IngressBkpAutomation",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\",
-      "BasePath": "_content/IngressBkpAutomation",
-      "RelativePath": "MysqlBackup/backup.sql 2023-12-6.zip",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\MysqlBackup\\backup.sql 2023-12-6.zip"
-    },
-    {
-      "Identity": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\MysqlBackup\\Backup\\backup.sql",
-      "SourceId": "IngressBkpAutomation",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\",
-      "BasePath": "_content/IngressBkpAutomation",
-      "RelativePath": "MysqlBackup/Backup/backup.sql",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\MysqlBackup\\Backup\\backup.sql"
     },
     {
       "Identity": "C:\\Users\\aa9us\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\staticwebassets\\notyf.min.css",

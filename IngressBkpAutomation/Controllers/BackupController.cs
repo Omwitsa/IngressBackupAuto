@@ -77,7 +77,7 @@ namespace IngressBkpAutomation.Controllers
                 var month = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
                 var backupMonthStartDate = month.AddMonths(-setup.IngressBackMonths);
                 var dic = new Dictionary<string, string>();
-                dic["attendance"] = $"SELECT * FROM `attendance` WHERE DATE_FORMAT(date,'%Y/%m/%d') >= '{backupMonthStartDate}';";
+                dic["attendance"] = $"SELECT * FROM `attendance` WHERE date >= (STR_TO_DATE('{backupMonthStartDate}', '%d/%m/%Y'));";
                 dic["leavetype"] = "SELECT * FROM `leavetype`;";
                 dic["schedule"] = "SELECT * FROM `schedule`;";
                 dic["user"] = "SELECT * FROM `user`;";
