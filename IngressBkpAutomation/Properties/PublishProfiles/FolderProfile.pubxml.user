@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\SourceCode\C#\IngressBkpAutomation\Publish</_PublishTargetUrl>
-    <History>True|2023-12-06T09:56:05.0872092Z;</History>
+    <History>True|2023-12-09T14:09:39.5146738Z;True|2023-12-07T10:53:38.6366331+03:00;True|2023-12-06T12:56:05.0872092+03:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>

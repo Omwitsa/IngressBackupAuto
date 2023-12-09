@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\IngressBkpAutomation.bundle.scp.css"
     },
     {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\MysqlBackup\\Backup\\backup.sql",
+      "PackagePath": "staticwebassets\\MysqlBackup\\Backup\\backup.sql"
+    },
+    {
+      "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\MysqlBackup\\backup.sql 2023-12-7.zip",
+      "PackagePath": "staticwebassets\\MysqlBackup\\backup.sql 2023-12-7.zip"
+    },
+    {
       "Id": "C:\\SourceCode\\C#\\IngressBkpAutomation\\IngressBkpAutomation\\IngressBkpAutomation\\wwwroot\\assets\\images\\bg-title-01.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\bg-title-01.jpg"
     },

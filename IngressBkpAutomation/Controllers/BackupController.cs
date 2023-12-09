@@ -97,13 +97,19 @@ namespace IngressBkpAutomation.Controllers
                             lstHeaders.Add("USE `" + setup.HoIngressDb + "`;");
                             backup.ExportInfo.SetDocumentHeaders(lstHeaders);
                             backup.ExportInfo.TablesToBeExportedDic = dic;
-                            backup.ExportInfo.EnableComment = false;
+                            backup.ExportInfo.EnableComment = true;
                             backup.ExportInfo.ExportFunctions = false;
                             backup.ExportInfo.ExportViews = false;
                             backup.ExportInfo.ExportTriggers = false;
                             backup.ExportInfo.ExportEvents = false;
                             backup.ExportInfo.ExportProcedures = false;
                             backup.ExportInfo.ExportRoutinesWithoutDefiner = false;
+                            backup.ExportInfo.ResetAutoIncrement = true;
+                            backup.ExportInfo.TextEncoding = System.Text.Encoding.UTF8;
+                            // ExportInfo.TextEncoding
+                            List<string> lstFooters = new List<string>();
+                            lstFooters.Add("");
+                            backup.ExportInfo.SetDocumentFooters(lstFooters);
 
                             backup.ExportToFile(filePath);
                         }
