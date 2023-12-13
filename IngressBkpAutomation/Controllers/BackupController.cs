@@ -105,8 +105,8 @@ namespace IngressBkpAutomation.Controllers
                             backup.ExportInfo.ExportProcedures = false;
                             backup.ExportInfo.ExportRoutinesWithoutDefiner = false;
                             backup.ExportInfo.ResetAutoIncrement = true;
-                            backup.ExportInfo.TextEncoding = System.Text.Encoding.UTF8;
-                            // ExportInfo.TextEncoding
+                            backup.ExportInfo.MaxSqlLength = 1024 * 1024;
+
                             List<string> lstFooters = new List<string>();
                             lstFooters.Add("");
                             backup.ExportInfo.SetDocumentFooters(lstFooters);
