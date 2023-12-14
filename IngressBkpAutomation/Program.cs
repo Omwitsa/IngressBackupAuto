@@ -8,11 +8,11 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("HatuaGrpDbConnection");
+var connectionString = builder.Configuration.GetConnectionString("MySqlDatabase");
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<IngressSetupDbContext>(options => options.UseSqlServer(connectionString));
-//builder.Services.AddDbContext<IngressSetupDbContext>(option => option.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+//builder.Services.AddDbContext<IngressSetupDbContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<IngressSetupDbContext>(option => option.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 builder.Services.AddTransient<IEmailProvider, EmailProvider>();
 builder.Services.AddNotyf(config =>
