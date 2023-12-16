@@ -70,6 +70,10 @@ namespace IngressBkpAutomation.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
+                    b.Property<string>("ReceiverEmail")
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
                     b.Property<string>("SiteIngressDb")
                         .HasMaxLength(20)
                         .HasColumnType("varchar(20)");

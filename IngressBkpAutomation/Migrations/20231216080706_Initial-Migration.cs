@@ -34,6 +34,8 @@ namespace IngressBkpAutomation.Migrations
                     SmtpPort = table.Column<int>(type: "int", nullable: false),
                     SocketOption = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
+                    ReceiverEmail = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
                     MysqlUserName = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     MysqlPassword = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true)

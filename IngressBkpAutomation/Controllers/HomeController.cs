@@ -267,7 +267,7 @@ namespace IngressBkpAutomation.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpPost]
-        public IActionResult SysSetup([Bind("OrgName,SiteName,SmtpUserName,SmtpPassword,SmtpServer,SmtpPort,SocketOption,MysqlUserName,MysqlPassword,MysqlServer,SiteIngressDb,HoIngressDb,IngressBackMonths,BackupLoc,Contact,Closed")] SysSetup setup)
+        public IActionResult SysSetup([Bind("OrgName,SiteName,SmtpUserName,SmtpPassword,SmtpServer,SmtpPort,SocketOption,ReceiverEmail,MysqlUserName,MysqlPassword,MysqlServer,SiteIngressDb,HoIngressDb,IngressBackMonths,BackupLoc,Contact,Closed")] SysSetup setup)
         {
             try
             {
@@ -293,6 +293,7 @@ namespace IngressBkpAutomation.Controllers
                 savedSetup.SmtpServer = setup.SmtpServer;
                 savedSetup.SmtpPort = setup.SmtpPort;
                 savedSetup.SocketOption = setup.SocketOption;
+                savedSetup.ReceiverEmail = setup.ReceiverEmail;
                 savedSetup.MysqlUserName = setup.MysqlUserName;
                 savedSetup.MysqlPassword = string.IsNullOrEmpty(setup.MysqlPassword) ? savedSetup.MysqlPassword : Decryptor.Encrypt(setup.MysqlPassword);
                 savedSetup.MysqlServer = setup.MysqlServer;

@@ -159,20 +159,20 @@ namespace IngressBkpAutomation.Controllers
             setting.BackupLoc = string.IsNullOrEmpty(setting.BackupLoc) ? Path.Combine(_env.WebRootPath, "MysqlBackup") : setting.BackupLoc;
             //var varificationLink = $"{Request.Host}/account/confirmEmail?username={userDetails.Data.UserId}";
             //var logoImageUrl = Path.Combine(_env.WebRootPath, setting.LogoImageUrl);
-            var institutionEmail = new EmailAddress
+            var sender = new EmailAddress
             {
                 Name = setting.SiteName,
                 Address = setting.SmtpUserName
             };
 
-            var receiver1Email = new EmailAddress
+            var receiver1 = new EmailAddress
             {
                 Name = "Ingress Backup",
-                Address = setting.SmtpUserName
+                Address = setting.ReceiverEmail
             };
 
             var userEmail = HttpContext.User.FindFirst(ClaimTypes.Email)?.Value;
-            var receiver2Email = new EmailAddress
+            var receiver2 = new EmailAddress
             {
                 Name = "Ingress Backup",
                 Address = userEmail
@@ -180,12 +180,12 @@ namespace IngressBkpAutomation.Controllers
 
             var emailMessage = new EmailMessage
             {
-                FromAddresses = new List<EmailAddress> { institutionEmail },
-                ToAddresses = new List<EmailAddress> { receiver1Email, receiver2Email },
+                FromAddresses = new List<EmailAddress> { sender },
+                ToAddresses = new List<EmailAddress> { receiver1, receiver2 },
                 Subject = $"{setting.SiteName} Ingress Backup",
                 //InstitutionLogo = logoImageUrl,
                 Attachments = new List<string>(),
-                Body = GenerateMailBody(institutionEmail),
+                Body = GenerateMailBody(sender),
             };
 
             var filePath = Path.Combine(setting.BackupLoc, setting.LastBackup);
@@ -240,11 +240,11 @@ namespace IngressBkpAutomation.Controllers
             }
         }
 
-        private string GenerateMailBody(EmailAddress institutionEmail)
+        private string GenerateMailBody(EmailAddress sender)
         {
             var message = "<div style='margin: 2em 5em 2em 5em; background-color: #f2f2f2'>" +
                             "<table style='width: 100 %; margin: 5% 10% 5% 10%;'><br>" +
-                                "<tr><td> " + institutionEmail.Name + " Backup(" + DateTime.UtcNow.AddHours(3) + ") <br> <br></td></tr>" +
+                                "<tr><td> " + sender.Name + " Backup(" + DateTime.UtcNow.AddHours(3) + ") <br> <br></td></tr>" +
                             " </table>" +
                         "</div>";
 

@@ -29,10 +29,11 @@ namespace IngressBkpAutomation.Models
                     OrgName = "AAA GROWERS",
                     SiteName = "HO",
                     SmtpServer = "mail.aaagrowers.co.ke",
-                    SmtpUserName = "wilson.omwitsa@aaagrowers.co.ke",
-                    SmtpPassword = Decryptor.Encrypt("W0mw!@9les!"),
+                    SmtpUserName = "ingress.bkpauto@aaagrowers.co.ke",
+                    SmtpPassword = Decryptor.Encrypt("Ib@$#@9les!"),
                     SmtpPort = 587, // 587, 465
                     SocketOption = "TLS", // sslonconnect, none
+                    ReceiverEmail = "ingressbkpauto@aaagrowers.co.ke",
                     MysqlUserName = "root",
                     MysqlPassword = Decryptor.Encrypt("Ingress2023"),
                     MysqlServer = "localhost",

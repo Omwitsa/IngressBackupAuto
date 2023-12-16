@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IngressBkpAutomation.Migrations
 {
     [DbContext(typeof(IngressSetupDbContext))]
-    [Migration("20231214072600_Initial-Migration")]
+    [Migration("20231216080706_Initial-Migration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -70,6 +70,10 @@ namespace IngressBkpAutomation.Migrations
                         .HasColumnType("varchar(50)");
 
                     b.Property<string>("Personnel")
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("ReceiverEmail")
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 

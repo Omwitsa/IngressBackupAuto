@@ -19,6 +19,8 @@ namespace IngressBkpAutomation.Models
         [StringLength(20)]
         public string? SocketOption { get; set; }
         [StringLength(50)]
+        public string? ReceiverEmail { get; set; }
+        [StringLength(50)]
         public string? MysqlUserName { get; set; }
         [StringLength(100)]
         public string? MysqlPassword { get; set; }
