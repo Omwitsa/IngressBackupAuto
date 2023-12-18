@@ -124,7 +124,7 @@ namespace IngressBkpAutomation.Controllers
             page = page < 1 ? 1 : page;
             const int pageSize = 9;
 
-            var users = await _context.Users.OrderByDescending(s => s.DateCreated).ToListAsync();
+            var users = await _context.Users.ToListAsync();
             int totalItems = users.Count();
             var pager = new Pager(totalItems, page, pageSize);
             int skip = (page - 1) * pageSize;

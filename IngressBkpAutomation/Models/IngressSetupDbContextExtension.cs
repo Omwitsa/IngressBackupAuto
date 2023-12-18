@@ -16,7 +16,6 @@ namespace IngressBkpAutomation.Models
                     Names = "Administrator",
                     Password = Decryptor.Encrypt("123.123"),
                     Email = "itsupport@aaagrowers.co.ke",
-                    DateCreated = DateTime.UtcNow,
                     Role = StrValues.AdminRole,
                     Status = true,
                 });
@@ -40,7 +39,6 @@ namespace IngressBkpAutomation.Models
                     SiteIngressDb = "ingress",
                     HoIngressDb = "ingress_simba",
                     IngressBackMonths = 2,
-                    DateCreated = DateTime.UtcNow,
                     Closed = false,
                 });
             }

@@ -40,6 +40,5 @@ namespace IngressBkpAutomation.Models
         public bool Closed { get; set; }
         [StringLength(50)]
         public string? Personnel { get; set; }
-        public DateTime? DateCreated { get; set; }
     }
 }
