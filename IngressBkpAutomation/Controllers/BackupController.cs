@@ -222,14 +222,14 @@ namespace IngressBkpAutomation.Controllers
 
             var receiver1 = new EmailAddress
             {
-                Name = "Ingress Backup",
+                Name = "Attendance Data",
                 Address = setting.ReceiverEmail
             };
 
             var userEmail = HttpContext.User.FindFirst(ClaimTypes.Email)?.Value;
             var receiver2 = new EmailAddress
             {
-                Name = "Ingress Backup",
+                Name = "Attendance Data",
                 Address = userEmail
             };
 
@@ -237,7 +237,7 @@ namespace IngressBkpAutomation.Controllers
             {
                 FromAddresses = new List<EmailAddress> { sender },
                 ToAddresses = new List<EmailAddress> { receiver1, receiver2 },
-                Subject = $"{setting.SiteName} Ingress Backup",
+                Subject = $"{setting.SiteName} Attendance Data",
                 //InstitutionLogo = logoImageUrl,
                 Attachments = new List<string>(),
                 Body = GenerateMailBody(sender, MailOparation.Backup),
@@ -268,14 +268,14 @@ namespace IngressBkpAutomation.Controllers
 
             var receiver1 = new EmailAddress
             {
-                Name = "Ingress Backup",
+                Name = "Attendance Data",
                 Address = setting.ReceiverEmail
             };
 
             var userEmail = HttpContext.User.FindFirst(ClaimTypes.Email)?.Value;
             var receiver2 = new EmailAddress
             {
-                Name = "Ingress Backup",
+                Name = "Attendance Data",
                 Address = userEmail
             };
 
@@ -283,7 +283,7 @@ namespace IngressBkpAutomation.Controllers
             {
                 FromAddresses = new List<EmailAddress> { sender },
                 ToAddresses = new List<EmailAddress> { receiver1, receiver2 },
-                Subject = $"{setting.SiteName} Ingress Backup",
+                Subject = $"{setting.SiteName} Attendance Data",
                 //InstitutionLogo = logoImageUrl,
                 Attachments = new List<string>(),
                 Body = GenerateMailBody(sender, MailOparation.Notify),
