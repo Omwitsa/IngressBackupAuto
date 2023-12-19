@@ -37,9 +37,13 @@ namespace IngressBkpAutomation.Models
                     MysqlPassword = Decryptor.Encrypt("Ingress2023"),
                     MysqlServer = "localhost",
                     SiteIngressDb = "ingress",
+                    HoMysqlUserName = "root",
+                    HoMysqlPassword = Decryptor.Encrypt("Ingress2023"),
+                    HoMysqlServer = "localhost",
                     HoIngressDb = "ingress_simba",
                     IngressBackMonths = 2,
                     Closed = false,
+                    OnMpls = true
                 });
             }
 

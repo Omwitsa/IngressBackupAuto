@@ -29,6 +29,9 @@ namespace IngressBkpAutomation.Controllers
         [Authorize]
         public IActionResult Index()
         {
+            var setup = _context.SysSetup.FirstOrDefault();
+            ViewBag.btnLable = setup.OnMpls ? "Backup and Update" : "Backup";
+            ViewBag.onMpls = setup.OnMpls;
             return View();
         }
 
@@ -59,6 +62,16 @@ namespace IngressBkpAutomation.Controllers
                     return RedirectToAction("Index");
                 }
 
+                if (setup.OnMpls)
+                {
+                    var importResp = await ImportBackup(filePath, setup);
+                    if (!importResp.Success)
+                    {
+                        _notyf.Error(importResp.Message);
+                        return RedirectToAction("Index");
+                    }
+                }
+                
                 _notyf.Success("Ingress Backed up successfully");
                 return RedirectToAction("Index");
             }
@@ -130,6 +143,41 @@ namespace IngressBkpAutomation.Controllers
                 };
             }
         }
+
+        private async Task<ReturnData<string>> ImportBackup(string filePath, SysSetup setup)
+        {
+            try
+            {
+                string constring = $"server={setup.HoMysqlServer};user={setup.HoMysqlUserName};pwd={Decryptor.Decrypt(setup.HoMysqlPassword)};database={setup.HoIngressDb};";
+                using (MySqlConnection conn = new MySqlConnection(constring))
+                {
+                    using (MySqlCommand cmd = new MySqlCommand())
+                    {
+                        using (MySqlBackup mb = new MySqlBackup(cmd))
+                        {
+                            cmd.Connection = conn;
+                            conn.Open();
+                            mb.ImportFromFile(filePath);
+                            conn.Close();
+                        }
+                    }
+                }
+
+                return new ReturnData<string>
+                {
+                    Success = true,
+                };
+            }
+            catch (Exception)
+            {
+                return new ReturnData<string>
+                {
+                    Success = false,
+                    Message = "Sorry, An error occurred"
+                };
+            }
+        }
+
 
         [Authorize]
         public async Task<IActionResult> SendIngressbackup()

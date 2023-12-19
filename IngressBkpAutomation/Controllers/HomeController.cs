@@ -267,7 +267,7 @@ namespace IngressBkpAutomation.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpPost]
-        public IActionResult SysSetup([Bind("OrgName,SiteName,SmtpUserName,SmtpPassword,SmtpServer,SmtpPort,SocketOption,ReceiverEmail,MysqlUserName,MysqlPassword,MysqlServer,SiteIngressDb,HoIngressDb,IngressBackMonths,BackupLoc,Contact,Closed")] SysSetup setup)
+        public IActionResult SysSetup([Bind("OrgName,SiteName,SmtpUserName,SmtpPassword,SmtpServer,SmtpPort,SocketOption,ReceiverEmail,MysqlUserName,MysqlPassword,MysqlServer,SiteIngressDb,HoMysqlUserName,HoMysqlPassword,HoMysqlServer,HoIngressDb,IngressBackMonths,BackupLoc,Contact,Closed,OnMpls")] SysSetup setup)
         {
             try
             {
@@ -299,10 +299,14 @@ namespace IngressBkpAutomation.Controllers
                 savedSetup.MysqlServer = setup.MysqlServer;
                 savedSetup.SiteIngressDb = setup.SiteIngressDb;
                 savedSetup.HoIngressDb = setup.HoIngressDb;
+                savedSetup.HoMysqlServer = setup.HoMysqlServer;
+                savedSetup.HoMysqlPassword = string.IsNullOrEmpty(setup.HoMysqlPassword) ? savedSetup.HoMysqlPassword : Decryptor.Encrypt(setup.HoMysqlPassword);
+                savedSetup.HoMysqlUserName = setup.HoMysqlUserName;
                 savedSetup.IngressBackMonths = setup.IngressBackMonths;
                 savedSetup.BackupLoc = setup.BackupLoc;
                 savedSetup.Contact = setup.Contact;
                 savedSetup.Closed = setup.Closed;
+                savedSetup.OnMpls = setup.OnMpls;
 
                 _context.SaveChanges();
                 _notyf.Success("Settings updated successfully");

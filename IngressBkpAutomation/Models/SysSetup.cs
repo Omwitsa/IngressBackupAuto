@@ -28,6 +28,12 @@ namespace IngressBkpAutomation.Models
         public string? MysqlServer { get; set; }
         [StringLength(20)]
         public string? SiteIngressDb { get; set; }
+        [StringLength(50)]
+        public string? HoMysqlUserName { get; set; }
+        [StringLength(100)]
+        public string? HoMysqlPassword { get; set; }
+        [StringLength(50)]
+        public string? HoMysqlServer { get; set; }
         [StringLength(20)]
         public string? HoIngressDb { get; set; }
         public int IngressBackMonths { get; set; }
@@ -38,6 +44,7 @@ namespace IngressBkpAutomation.Models
         [StringLength(250)]
         public string? BackupLoc { get; set; }
         public bool Closed { get; set; }
+        public bool OnMpls { get; set; }
         [StringLength(50)]
         public string? Personnel { get; set; }
     }

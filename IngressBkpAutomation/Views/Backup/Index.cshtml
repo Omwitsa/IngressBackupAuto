@@ -7,12 +7,15 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-6">
-                    <a asp-action="BackupIngress" class="btn btn-primary btn-lg btn-block">Backup</a>
+                    <a asp-action="BackupIngress" class="btn btn-primary btn-lg btn-block">@ViewBag.btnLable</a>
                 </div>
 
-                <div class="col-md-6">
-                    <a asp-action="SendIngressbackup" class="btn btn-primary btn-lg btn-block">Send</a>
-                </div>
+                @if (!ViewBag.onMpls)
+                {
+                    <div class="col-md-6">
+                        <a asp-action="SendIngressbackup" class="btn btn-primary btn-lg btn-block">Send</a>
+                    </div>
+                }
             </div>
         </div>
     </div>
