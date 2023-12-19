@@ -70,6 +70,13 @@ namespace IngressBkpAutomation.Controllers
                         _notyf.Error(importResp.Message);
                         return RedirectToAction("Index");
                     }
+
+                    var emailResp = await NotifyBackupUpdate();
+                    if (!emailResp.Success)
+                    {
+                        _notyf.Error(emailResp.Message);
+                        return RedirectToAction("Index");
+                    }
                 }
                 
                 _notyf.Success("Ingress Backed up successfully");
@@ -184,7 +191,7 @@ namespace IngressBkpAutomation.Controllers
         {
             try
             {
-                var emailResp = await SendEmail();
+                var emailResp = await EmailBackup();
                 if (!emailResp.Success)
                 {
                     _notyf.Error(emailResp.Message);
@@ -201,7 +208,7 @@ namespace IngressBkpAutomation.Controllers
             }
         }
 
-        private async Task<ReturnData<bool>> SendEmail()
+        private async Task<ReturnData<bool>> EmailBackup()
         {
             var setting = _context.SysSetup.FirstOrDefault();
             setting.BackupLoc = string.IsNullOrEmpty(setting.BackupLoc) ? Path.Combine(_env.WebRootPath, "MysqlBackup") : setting.BackupLoc;
@@ -233,7 +240,7 @@ namespace IngressBkpAutomation.Controllers
                 Subject = $"{setting.SiteName} Ingress Backup",
                 //InstitutionLogo = logoImageUrl,
                 Attachments = new List<string>(),
-                Body = GenerateMailBody(sender),
+                Body = GenerateMailBody(sender, MailOparation.Backup),
             };
 
             var filePath = Path.Combine(setting.BackupLoc, setting.LastBackup);
@@ -249,6 +256,51 @@ namespace IngressBkpAutomation.Controllers
             };
             return await _emailProvider.SendEmailAsync(emailMessage, smtpSettings);
         }
+
+        private async Task<ReturnData<bool>> NotifyBackupUpdate()
+        {
+            var setting = _context.SysSetup.FirstOrDefault();
+            var sender = new EmailAddress
+            {
+                Name = setting.SiteName,
+                Address = setting.SmtpUserName
+            };
+
+            var receiver1 = new EmailAddress
+            {
+                Name = "Ingress Backup",
+                Address = setting.ReceiverEmail
+            };
+
+            var userEmail = HttpContext.User.FindFirst(ClaimTypes.Email)?.Value;
+            var receiver2 = new EmailAddress
+            {
+                Name = "Ingress Backup",
+                Address = userEmail
+            };
+
+            var emailMessage = new EmailMessage
+            {
+                FromAddresses = new List<EmailAddress> { sender },
+                ToAddresses = new List<EmailAddress> { receiver1, receiver2 },
+                Subject = $"{setting.SiteName} Ingress Backup",
+                //InstitutionLogo = logoImageUrl,
+                Attachments = new List<string>(),
+                Body = GenerateMailBody(sender, MailOparation.Notify),
+            };
+
+            var smtpSettings = new MailSettings
+            {
+                EmailId = setting.SmtpUserName,
+                DisplayName = setting.SiteName,
+                Password = setting.SmtpPassword,
+                Server = setting.SmtpServer,
+                Port = setting.SmtpPort,
+                SocketOption = setting.SocketOption
+            };
+            return await _emailProvider.SendEmailAsync(emailMessage, smtpSettings);
+        }
+
 
         private async Task<ReturnData<string>> ZipBackup()
         {
@@ -288,16 +340,17 @@ namespace IngressBkpAutomation.Controllers
             }
         }
 
-        private string GenerateMailBody(EmailAddress sender)
+        private string GenerateMailBody(EmailAddress sender, MailOparation mailOparation)
         {
-            var message = "<div style='margin: 2em 5em 2em 5em; background-color: #f2f2f2'>" +
-                            "<table style='width: 100 %; margin: 5% 10% 5% 10%;'><br>" +
-                                "<tr><td> " + sender.Name + " Backup(" + DateTime.UtcNow.AddHours(3) + ") <br> <br></td></tr>" +
-                            " </table>" +
-                        "</div>";
+            var message = "";
+            if(mailOparation == MailOparation.Notify)
+                message = "<div style='margin: 2em 5em 2em 5em; background-color: #f2f2f2'>" +
+                           "<table style='width: 100 %; margin: 5% 10% 5% 10%;'><br>" +
+                                "<tr><td> This is a system generated notification on "+ sender.Name + " attendance data update as at ("+ DateTime.UtcNow.AddHours(3) + ") <br> <br></td></tr>" +
+                           " </table>" +
+                       "</div>";
 
-            return "";
+            return message;
         }
-
     }
 }

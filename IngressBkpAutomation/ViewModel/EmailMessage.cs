@@ -25,4 +25,10 @@
         public string Name { get; set; }
         public string Address { get; set; }
     }
+
+    public enum MailOparation
+    {
+       Backup = 0,
+       Notify = 1,
+    }
 }
