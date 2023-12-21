@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IngressBkpAutomation.Migrations
 {
     [DbContext(typeof(IngressSetupDbContext))]
-    [Migration("20231218121837_Initial-Migration")]
+    [Migration("20231220102326_Initial-Migration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -42,6 +42,18 @@ namespace IngressBkpAutomation.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("varchar(20)");
 
+                    b.Property<string>("HoMysqlPassword")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("HoMysqlServer")
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("HoMysqlUserName")
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
                     b.Property<int>("IngressBackMonths")
                         .HasColumnType("int");
 
@@ -60,6 +72,9 @@ namespace IngressBkpAutomation.Migrations
                     b.Property<string>("MysqlUserName")
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
+
+                    b.Property<bool>("OnMpls")
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<string>("OrgName")
                         .HasMaxLength(50)

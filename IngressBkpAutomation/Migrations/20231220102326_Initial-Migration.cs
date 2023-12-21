@@ -43,6 +43,12 @@ namespace IngressBkpAutomation.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     SiteIngressDb = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
+                    HoMysqlUserName = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    HoMysqlPassword = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    HoMysqlServer = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
                     HoIngressDb = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     IngressBackMonths = table.Column<int>(type: "int", nullable: false),
@@ -53,6 +59,7 @@ namespace IngressBkpAutomation.Migrations
                     BackupLoc = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Closed = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    OnMpls = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     Personnel = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },

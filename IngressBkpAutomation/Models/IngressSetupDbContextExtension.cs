@@ -31,7 +31,7 @@ namespace IngressBkpAutomation.Models
                     SmtpUserName = "ingress.bkpauto@aaagrowers.co.ke",
                     SmtpPassword = Decryptor.Encrypt("Ib@$#@9les!"),
                     SmtpPort = 587, // 587, 465
-                    SocketOption = "TLS", // sslonconnect, none
+                    SocketOption = "TLS", // TLS, SSL, NONE
                     ReceiverEmail = "ingressbkpauto@aaagrowers.co.ke",
                     MysqlUserName = "root",
                     MysqlPassword = Decryptor.Encrypt("Ingress2023"),
