@@ -107,6 +107,16 @@
                         <input asp-for="Contact" type="text" class="form-control">
                         <span asp-validation-for="Contact" class="text-danger"></span>
                     </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                        <label class="form-control-label">Ist Backup At</label>
+                        <input asp-for="AutoBackup1At" type="time" class="form-control">
+                        <span asp-validation-for="AutoBackup1At" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-3">
+                        <label class="form-control-label">2nd Backup At</label>
+                        <input asp-for="AutoBackup2At" type="time" class="form-control">
+                        <span asp-validation-for="AutoBackup2At" class="text-danger"></span>
+                    </div>
                 </div>
 
                 <div class="row form-group">

@@ -47,5 +47,7 @@ namespace IngressBkpAutomation.Models
         public bool OnMpls { get; set; }
         [StringLength(50)]
         public string? Personnel { get; set; }
+        public TimeSpan? AutoBackup1At { get; set; }
+        public TimeSpan? AutoBackup2At { get; set; }
     }
 }

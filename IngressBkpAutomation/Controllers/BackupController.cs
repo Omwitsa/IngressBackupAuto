@@ -1,5 +1,4 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
-using IngressBkpAutomation.Constants;
 using IngressBkpAutomation.IProvider;
 using IngressBkpAutomation.Models;
 using IngressBkpAutomation.Utilities;
@@ -111,6 +110,7 @@ namespace IngressBkpAutomation.Controllers
                         using (MySqlBackup backup = new MySqlBackup(command))
                         {
                             command.Connection = connection;
+                            command.CommandTimeout = 0;
                             connection.Open();
 
                             List<string> lstHeaders = new List<string>();

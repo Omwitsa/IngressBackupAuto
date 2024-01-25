@@ -1,6 +1,5 @@
 ﻿using IngressBkpAutomation.Constants;
 using IngressBkpAutomation.Utilities;
-using MySql.Data.MySqlClient;
 
 namespace IngressBkpAutomation.Models
 {

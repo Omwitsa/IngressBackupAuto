@@ -10,19 +10,25 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.IdentityModel.Tokens;
+using IngressBkpAutomation.IProvider;
+using Hangfire;
+using Hangfire.Logging;
 
 namespace IngressBkpAutomation.Controllers
 {
     public class HomeController : Controller
     {
         private readonly INotyfService _notyf;
+        private readonly ICronJobProvider _jobProvider;
+        private readonly IRecurringJobManager _jobManager;
         private readonly IngressSetupDbContext _context;
         private InputValidator _validateService = new InputValidator();
 
-        public HomeController(IngressSetupDbContext context, INotyfService notyf)
+        public HomeController(IngressSetupDbContext context, INotyfService notyf, ICronJobProvider jobProvider, IRecurringJobManager jobManager)
         {
             _notyf = notyf;
+            _jobProvider = jobProvider;
+            _jobManager = jobManager;
             _context = context;
         }
 
@@ -95,7 +101,7 @@ namespace IngressBkpAutomation.Controllers
 
             var authProperties = new AuthenticationProperties
             {
-                ExpiresUtc = DateTime.Now.AddMinutes(10),
+                ExpiresUtc = DateTime.Now.AddMinutes(30),
                 //IsPersistent = login.RememberLogin
             };
             // Sign In
@@ -267,10 +273,16 @@ namespace IngressBkpAutomation.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpPost]
-        public IActionResult SysSetup([Bind("OrgName,SiteName,SmtpUserName,SmtpPassword,SmtpServer,SmtpPort,SocketOption,ReceiverEmail,MysqlUserName,MysqlPassword,MysqlServer,SiteIngressDb,HoMysqlUserName,HoMysqlPassword,HoMysqlServer,HoIngressDb,IngressBackMonths,BackupLoc,Contact,Closed,OnMpls")] SysSetup setup)
+        public IActionResult SysSetup([Bind("OrgName,SiteName,SmtpUserName,SmtpPassword,SmtpServer,SmtpPort,SocketOption,ReceiverEmail,MysqlUserName,MysqlPassword,MysqlServer,SiteIngressDb,HoMysqlUserName,HoMysqlPassword,HoMysqlServer,HoIngressDb,IngressBackMonths,BackupLoc,Contact,Closed,OnMpls,AutoBackup1At,AutoBackup2At")] SysSetup setup)
         {
             try
             {
+                if (setup.AutoBackup1At == null || setup.AutoBackup2At == null)
+                {
+                    setup.AutoBackup1At = TimeSpan.Parse("10:00");
+                    setup.AutoBackup2At = TimeSpan.Parse("14:00");
+                }
+
                 ViewBag.options = new SelectList(ArrValues.SocketOptions);
                 var userInput = new List<Tuple<string, string, InputDataType>>
                 {
@@ -307,8 +319,11 @@ namespace IngressBkpAutomation.Controllers
                 savedSetup.Contact = setup.Contact;
                 savedSetup.Closed = setup.Closed;
                 savedSetup.OnMpls = setup.OnMpls;
+                savedSetup.AutoBackup1At = setup.AutoBackup1At;
+                savedSetup.AutoBackup2At = setup.AutoBackup2At;
 
                 _context.SaveChanges();
+                GreatCronJob(setup);
                 _notyf.Success("Settings updated successfully");
                 return View(setup);
             }
@@ -317,6 +332,18 @@ namespace IngressBkpAutomation.Controllers
                 _notyf.Error("Sorry, An error occurred");
                 return View(setup);
             }
+        }
+
+        private void GreatCronJob(SysSetup setup)
+        {
+            int backup1Time = (int)setup.AutoBackup1At.Value.Subtract(TimeSpan.FromHours(3)).TotalHours;
+            int backup2Time = (int)setup.AutoBackup2At.Value.Subtract(TimeSpan.FromHours(3)).TotalHours;
+            //recurringJob.AddOrUpdate("IngressBackup", () => cronJob.AddReccuringJob(), Cron.Minutely);
+
+            //Cron.Daily();  -  "0 0 * * *"  Every night at 12:00 AM (default UTC time)
+            //recurringJob.AddOrUpdate("IngressBackup", () => cronJob.AddReccuringJob(), Cron.Daily(6, 30));  // "30 9 * * *"
+            _jobManager.AddOrUpdate("AttendanceBackup1", () => _jobProvider.BackupAttendance(), Cron.Daily(backup1Time, 00));
+            _jobManager.AddOrUpdate("AttendanceBackup2", () => _jobProvider.BackupAttendance(), Cron.Daily(backup2Time, 00));
         }
     }
 }
