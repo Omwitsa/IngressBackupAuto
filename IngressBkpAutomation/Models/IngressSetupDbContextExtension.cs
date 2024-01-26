@@ -42,7 +42,9 @@ namespace IngressBkpAutomation.Models
                     HoIngressDb = "ingress_simba",
                     IngressBackMonths = 2,
                     Closed = false,
-                    OnMpls = true
+                    OnMpls = true,
+                    AutoBackup1At = TimeSpan.Parse("10:00"),
+                    AutoBackup2At = TimeSpan.Parse("14:00")
                 });
             }
 
