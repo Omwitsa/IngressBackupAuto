@@ -42,6 +42,7 @@ namespace IngressBkpAutomation.Utilities
                         {
                             command.Connection = connection;
                             command.CommandTimeout = 0;
+                            //command.CommandText = "SET COLLATE=utf8mb4_unicode_ci";
                             connection.Open();
 
                             List<string> lstHeaders = new List<string>();

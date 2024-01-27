@@ -323,7 +323,7 @@ namespace IngressBkpAutomation.Controllers
                 savedSetup.AutoBackup2At = setup.AutoBackup2At;
 
                 _context.SaveChanges();
-                GreatCronJob(setup);
+                //GreatCronJob(setup);
                 _notyf.Success("Settings updated successfully");
                 return View(setup);
             }

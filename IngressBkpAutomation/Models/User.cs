@@ -25,6 +25,7 @@ namespace IngressBkpAutomation.Models
         [StringLength(20)]
         public string? Role { get; set; }
         [StringLength(20)]
-        public string? Personnel { get; set; } 
+        public string? Personnel { get; set; }
+        public DateTime? DateCreated { get; set; }
     }
 }

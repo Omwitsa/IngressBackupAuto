@@ -53,7 +53,7 @@ namespace IngressBkpAutomation.Provider
 
             var receiver1 = new EmailAddress
             {
-                Name = "System Genereated Attendance",
+                Name = "System Generated Ingress Backup",
                 Address = setting.ReceiverEmail
             };
 
@@ -61,7 +61,7 @@ namespace IngressBkpAutomation.Provider
             {
                 FromAddresses = new List<EmailAddress> { sender },
                 ToAddresses = new List<EmailAddress> { receiver1 },
-                Subject = $"{setting.SiteName} System Genereated Attendance",
+                Subject = $"{setting.SiteName} System Generated Ingress Backup",
                 //InstitutionLogo = logoImageUrl,
                 Attachments = new List<string>(),
                 Body = _utility.GenerateMailBody(sender, MailOparation.Notify),
