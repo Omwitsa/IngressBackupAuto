@@ -8,7 +8,6 @@ using IngressBkpAutomation.Provider;
 using IngressBkpAutomation.Utilities;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("MySqlDatabase");
@@ -73,21 +72,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Login}/{id?}");
 
 Utility.UpdateDatabase(app);
-//using (var serviceScope = app.Services.CreateScope())
-//{
-//    var services = serviceScope.ServiceProvider;
-//    var recurringJob = services.GetRequiredService<IRecurringJobManager>();
-//    var cronJob = services.GetRequiredService<ICronJobProvider>();
-//    var context = services.GetRequiredService<IngressSetupDbContext>();
-//    var setup = context.SysSetup.FirstOrDefault();
-
-//    int backup1Time = (int)setup.AutoBackup1At.Value.Subtract(TimeSpan.FromHours(3)).TotalHours;
-//    int backup2Time = (int)setup.AutoBackup2At.Value.Subtract(TimeSpan.FromHours(3)).TotalHours;
-//    //recurringJob.AddOrUpdate("IngressBackup", () => cronJob.AddReccuringJob(), Cron.Minutely);
-
-//    //Cron.Daily();  -  "0 0 * * *"  Every night at 12:00 AM (default UTC time)
-//    //recurringJob.AddOrUpdate("IngressBackup", () => cronJob.AddReccuringJob(), Cron.Daily(6, 30));  // "30 9 * * *"
-//    recurringJob.AddOrUpdate("AttendanceBackup1", () => cronJob.BackupAttendance(), Cron.Daily(backup1Time, 00));
-//    recurringJob.AddOrUpdate("AttendanceBackup2", () => cronJob.BackupAttendance(), Cron.Daily(backup2Time, 00));
-//}
 app.Run();

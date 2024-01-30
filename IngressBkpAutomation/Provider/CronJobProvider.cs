@@ -1,10 +1,7 @@
-﻿using AspNetCoreHero.ToastNotification.Abstractions;
-using IngressBkpAutomation.IProvider;
+﻿using IngressBkpAutomation.IProvider;
 using IngressBkpAutomation.Models;
 using IngressBkpAutomation.Utilities;
 using IngressBkpAutomation.ViewModel;
-using Microsoft.EntityFrameworkCore;
-using System.Security.Claims;
 
 namespace IngressBkpAutomation.Provider
 {
