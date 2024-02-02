@@ -323,7 +323,7 @@ namespace IngressBkpAutomation.Controllers
                 savedSetup.AutoBackup2At = setup.AutoBackup2At;
 
                 _context.SaveChanges();
-                GreatCronJob(setup);
+                CreatCronJob(setup);
                 _notyf.Success("Settings updated successfully");
                 return View(setup);
             }
@@ -334,16 +334,13 @@ namespace IngressBkpAutomation.Controllers
             }
         }
 
-        private void GreatCronJob(SysSetup setup)
+        private void CreatCronJob(SysSetup setup)
         {
-            int backup1Time = (int)setup.AutoBackup1At.Value.Subtract(TimeSpan.FromHours(3)).TotalHours;
-            int backup2Time = (int)setup.AutoBackup2At.Value.Subtract(TimeSpan.FromHours(3)).TotalHours;
-            //recurringJob.AddOrUpdate("IngressBackup", () => cronJob.AddReccuringJob(), Cron.Minutely);
+            var backup1Time = setup.AutoBackup1At.GetValueOrDefault();
+            var backup2Time = setup.AutoBackup2At.GetValueOrDefault();
 
-            //Cron.Daily();  -  "0 0 * * *"  Every night at 12:00 AM (default UTC time)
-            //recurringJob.AddOrUpdate("IngressBackup", () => cronJob.AddReccuringJob(), Cron.Daily(6, 30));  // "30 9 * * *"
-            _jobManager.AddOrUpdate("AttendanceBackup1", () => _jobProvider.BackupAttendance(), Cron.Daily(backup1Time, 00));
-            _jobManager.AddOrUpdate("AttendanceBackup2", () => _jobProvider.BackupAttendance(), Cron.Daily(backup2Time, 00));
+            _jobManager.AddOrUpdate("AttendanceBackup1", () => _jobProvider.BackupAttendance(), Cron.Daily(backup1Time.Hours, backup1Time.Minutes), TimeZoneInfo.Local);
+            _jobManager.AddOrUpdate("AttendanceBackup2", () => _jobProvider.BackupAttendance(), Cron.Daily(backup2Time.Hours, backup2Time.Minutes), TimeZoneInfo.Local);
         }
     }
 }
