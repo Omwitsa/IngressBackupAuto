@@ -8,6 +8,7 @@ using IngressBkpAutomation.Provider;
 using IngressBkpAutomation.Utilities;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("MySqlDatabase");
@@ -72,4 +73,18 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Login}/{id?}");
 
 Utility.UpdateDatabase(app);
+using (var serviceScope = app.Services.CreateScope())
+{
+    var services = serviceScope.ServiceProvider;
+    var jobManager = services.GetRequiredService<IRecurringJobManager>();
+    var cronJob = services.GetRequiredService<ICronJobProvider>();
+    var context = services.GetRequiredService<IngressSetupDbContext>();
+    var setup = context.SysSetup.FirstOrDefault();
+
+    var backup1Time = setup.AutoBackup1At.GetValueOrDefault();
+    var backup2Time = setup.AutoBackup2At.GetValueOrDefault();
+
+    jobManager.AddOrUpdate("AttendanceBackup1", () => cronJob.BackupAttendance(), Cron.Daily(backup1Time.Hours, backup1Time.Minutes), TimeZoneInfo.Local);
+    jobManager.AddOrUpdate("AttendanceBackup2", () => cronJob.BackupAttendance(), Cron.Daily(backup2Time.Hours, backup2Time.Minutes), TimeZoneInfo.Local);
+}
 app.Run();
